@@ -1,0 +1,9 @@
+<tr *ngFor = "let i of employees;index as j">
+    <td>{{j+1}}</td>
+    <td>{{i.empid}}</td>
+    <td>{{i.name}}</td>
+    <td>{{i.email}}</td>
+    <td>{{i.Designation}}</td>
+    <td>{{i.Company}}</td>
+    <td><button type="button" (click) = "onDelete(i)" class= "btn btn-danger">Remove</button></td>
+</tr>
